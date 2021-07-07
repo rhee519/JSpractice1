@@ -4,12 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Momentum App</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="hello">
-      <h1 class="hello" id="title">Click me!</h1>
-    </div>
-    <script src="app.js"></script>
+    <form id="login-form" class="hidden">
+      <input
+        required
+        maxlength="15"
+        type="text" 
+        placeholder="What is your name?" />
+      <input 
+        type="submit"
+        value="Log In" />
+    </form>
+    <h2 id="clock" >00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
   </body>
 </html>  
